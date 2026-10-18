@@ -377,3 +377,141 @@ int main(){
     
     
 }
+
+int main(){
+    float decpounds,decfrac;
+    int pounds,shilling,pence;
+
+    cout<<"enter the decimal pounds:";
+    cin>>decpounds;
+
+    pounds=static_cast<int>(decpounds);
+    decfrac=decpounds-pounds;
+
+    shilling=static_cast<int>(decfrac*20);   //1 pound=20 shilling
+    decfrac=decfrac*20-shilling;
+
+    pence=static_cast<int>(decfrac*12);     //i shilling=12pence
+
+    cout<<"equivalent in old notation=L"<<pounds<<"."<<shilling<<"."<<pence<<endl;
+
+
+
+}*/
+
+//book assignment
+/*#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int number;
+   
+
+    cout<<"enter a number:";
+    cin>>number;
+
+    for(int line=1;line<=20;line++){
+       for(int col =1; col<=10;col++){
+        cout<<setw(5)<<number * ((line - 1) * 10 + col);
+       }
+    }
+    cout<<endl;
+}*/
+//question 2
+/*#include<iostream>
+using namespace std;
+int main(){
+    float Fahrenheit;
+    float Celsius;
+    int temperature;
+    int choice;
+
+    cout<<"type 1 for Celsius to Farenheit"<<endl;
+    cout<<"type 2 for Fahrenheit to Celsius"<<endl;
+
+    cout<<"enter your choice:";
+    cin>>choice;
+
+
+
+
+    cout<<"enter the temperature:";
+    cin>>temperature;
+
+    if(choice==1){
+    Celsius = (temperature - 32) * 5 / 9;
+    cout << "Temperature in Celsius = " << Celsius;
+
+}else if(choice==2){
+        Fahrenheit=(temperature *9/5)+32;
+        cout<<"temperature in fahrenheit is:"<<Fahrenheit;
+       
+}
+}*/
+//question do while loop
+/*#include<iostream>
+using namespace std;
+int main(){
+    int marks;
+    cout<<"enter marks (0-100):";
+
+    do{
+        cin>>marks;
+        if(marks<0 || marks>100){
+            cout<<"invalid! enter marks(0-100)";
+        }
+    }while(marks<0 || marks>100);
+
+    cout<<"accepted:"<<marks<<endl;
+
+}*/
+//question 2 
+#include<iostream>
+using namespace std;
+int main(){
+    int add,subtract,multiply,divide;
+    int a,b;
+    int choice;
+
+    do{
+        cout<<"----- calculator----"<<endl;
+        cout<<"1  : add"<<endl;
+        cout<<"2  : subtract"<<endl;
+        cout<<"3  : multiply"<<endl;
+        cout<<"4  : divide"<<endl;
+        cout<<"5  : exit"<<endl;
+
+    cout<<"enter choice:";
+    cin>>choice;
+
+    if(choice==5){
+        cout<<"goodbye!\n";
+        break;
+    }
+
+    if(choice<1 || choice > 5){
+        cout<<"invalid choice,try again |n";
+        continue;
+    }
+    cout<<"enter two numbers:";
+    cin>>a>>b;
+
+    switch(choice){
+        case'+':
+        cout<<"result:"<<a+b;
+        case'-':
+        cout<<"result:"<<a-b;
+        break;
+        case'*':
+        cout<<"result:"<<a*b;
+        break;
+        case'/':
+        cout<<"result:"<<a/b;
+        break;
+
+        default:
+        cout<<"invalid operator";
+
+    }
+    }
+    
