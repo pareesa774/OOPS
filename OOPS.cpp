@@ -363,7 +363,7 @@ return 0;
 
     cout<<"decimal_pound:"<<decimal_pounds;
 }*/
-#include<iomanip>
+/*#include<iomanip>
 int main(){
     cout<<setiosflags(ios::left);
     cout<<setw(12)<<"last name"<<setw(12)<<"first name"<<setw(20)<<"street address"<<setw(12)<<"town"<<setw(6)<<"state"<<endl;
@@ -376,9 +376,9 @@ int main(){
 
     
     
-}
+}*/
 
-int main(){
+/*int main(){
     float decpounds,decfrac;
     int pounds,shilling,pence;
 
@@ -466,7 +466,7 @@ int main(){
 
 }*/
 //question 2 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     int add,subtract,multiply,divide;
@@ -513,5 +513,5 @@ int main(){
         cout<<"invalid operator";
 
     }
-    }
+    }*/
     
