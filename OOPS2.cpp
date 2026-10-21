@@ -256,6 +256,326 @@ int main(){
     cout<<"after swapping:"<<x<<y;
 
 }*/
+//basic function concept
+ //question 1
+ /*void printline(char ch,int n){
+    for(int i=0;i<n;i++){
+        cout<<ch;
+    }
+    cout<<'\n';
+ }
+ int main(){
+    printline('*',20);
+    cout<<"Pareesa\n";
+    printline('*',20);
+    return 0;
+ }*/
+//question 2
+/*bool isPrime(int n){
+if(n<2) return false;
+if(n<4) return true;
+if(n % 2 == 0) return false;
+for(int i=3;i*i <=n; i+=2)
+if(n%i==0) return false;
+return true;
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+    for(int i=a;i<=b;i++){
+        if(isPrime(i))
+        cout<<i<<" ";
+        cout<<endl;
+        return 0;
+    }
+}*/
+//question 3
+
+/*long long factorial(int n) {
+    long long f = 1;
+    for (int i = 2; i <= n; i++)
+        f *= i;
+    return f;
+}
+
+long long nCr(int n, int r) {
+    if (r < 0 || r > n) return 0;
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
+
+int main() {
+    int n, r;
+    cin >> n >> r;
+    cout << nCr(n, r) << endl;
+    return 0;
+}*/
+//call by value
+//question 1
+/*void changes(int x){
+    int result = x*2;
+    cout<<"the number is:"<<result<<endl;
+
+    
+}
+int main(){
+    int num,result;
+
+    cout<<"enter number";
+    cin>>num;
+     
+    result = num;
+    changes(result);
+    cout<<"original number:"<<num<<endl;
+   
+
+}*/
+//question 2
+/*int power(int base, int exp){
+    int result = 1;
+
+    while(exp>0){
+        result = result * base;
+        exp--;
+    }
+
+    return result;
+
+}
+int main(){
+    int base,exp;
+
+    cout<<"enter the number:";
+    cin>>base>>exp;
+
+    cout<<"before call:"<<exp<<endl;
+
+    int ans = power(base,exp);
+
+    cout<<"power:"<<ans<<endl;
+    cout<<"after call:"<<exp<<endl;
+
+
+}*/
+//question 4
+/*void swap(int a , int b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout<<"inside function: a"<<a<<"b:"<<b<<endl;
+
+}
+int main(){
+    int x,y;
+
+    cout<<"enter x and y:";
+    cin>>x>>y;
+
+    cout<<"before swapping:"<<x<<y;
+    swap(x,y);
+    cout<<"after swapping:"<<x<<y;
+
+}*/
+//basic function concept
+ //question 1
+ /*void printline(char ch,int n){
+    for(int i=0;i<n;i++){
+        cout<<ch;
+    }
+    cout<<'\n';
+ }
+ int main(){
+    printline('*',20);
+    cout<<"Pareesa\n";
+    printline('*',20);
+    return 0;
+ }*/
+//question 2
+/*bool isPrime(int n){
+if(n<2) return false;
+if(n<4) return true;
+if(n % 2 == 0) return false;
+for(int i=3;i*i <=n; i+=2)
+if(n%i==0) return false;
+return true;
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+    for(int i=a;i<=b;i++){
+        if(isPrime(i))
+        cout<<i<<" ";
+        cout<<endl;
+        return 0;
+    }
+}*/
+//question 3
+
+/*long long factorial(int n) {
+    long long f = 1;
+    for (int i = 2; i <= n; i++)
+        f *= i;
+    return f;
+}
+
+long long nCr(int n, int r) {
+    if (r < 0 || r > n) return 0;
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
+
+int main() {
+    int n, r;
+    cin >> n >> r;
+    cout << nCr(n, r) << endl;
+    return 0;
+}*/
+//call by value
+//question 1
+/*void changes(int x){
+    int result = x*2;
+    cout<<"the number is:"<<result<<endl;
+
+    
+}
+int main(){
+    int num,result;
+
+    cout<<"enter number";
+    cin>>num;
+     
+    result = num;
+    changes(result);
+    cout<<"original number:"<<num<<endl;
+   
+
+}*/
+//question 2
+/*int power(int base, int exp){
+    int result = 1;
+
+    while(exp>0){
+        result = result * base;
+        exp--;
+    }
+
+    return result;
+
+}
+int main(){
+    int base,exp;
+
+    cout<<"enter the number:";
+    cin>>base>>exp;
+
+    cout<<"before call:"<<exp<<endl;
+
+    int ans = power(base,exp);
+
+    cout<<"power:"<<ans<<endl;
+    cout<<"after call:"<<exp<<endl;
+
+
+}*/
+//question 4
+/*void swap(int a , int b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout<<"inside function: a"<<a<<"b:"<<b<<endl;
+
+}
+int main(){
+    int x,y;
+
+    cout<<"enter x and y:";
+    cin>>x>>y;
+
+    cout<<"before swapping:"<<x<<y;
+    swap(x,y);
+    cout<<"after swapping:"<<x<<y;
+
+}*/
+//question 3
+/*int gcd(int a, int b){
+    while(b!=0){
+        int r = a%b;
+        a=b;
+        b=r;
+    }
+    return a;
+   
+}
+
+inline int lcm(int a,int b){
+    return a/gcd(a,b)*b;
+}
+int main(){
+    int x,y, result;
+
+    cout<<"enter the num:";
+    cin>>x>>y;
+
+    result = gcd(x,y);
+
+    cout<<"GCD = "<<result<<endl;
+    return 0;
+    
+
+
+
+}*/
+
+
+
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
 
 
 
